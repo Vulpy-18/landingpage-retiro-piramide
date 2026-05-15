@@ -14,17 +14,17 @@
 
     <style>
       :root {
-        --verde: #302050;
-        --ocre: #8aa4fc;
-        --ocre-escuro: #cf9f01;
+        --verde: #232050;
+        --ocre: #ffd900;
+        --ocre-escuro: #be9200;
         --creme: #f5f0ff;
         --creme-escuro: #ede0ff;
-        --texto: #2a1a4a;
+        --texto: #211a4a;
         --texto2: #f5eeff;
-        --texto-titulo: #302050;
+        --texto-titulo: #181047;
         --texto-titulo2: #ede0ff;
         --verde-claro: #3040c0;
-        --verde-bg: #2e255c;
+        --verde-bg: #25265c;
         --sombra: rgba(48, 32, 80, 0.18);
         --sombra-media: rgba(48, 32, 80, 0.28);
       }
@@ -399,7 +399,7 @@
         align-items: flex-start;
         gap: 16px;
         padding: 24px;
-        background: #fff;
+        background: var(--creme);
         border: 1px solid rgba(48, 32, 80, 0.18);
         border-left: 3px solid var(--verde);
         border-radius: 4px;
@@ -407,7 +407,7 @@
         box-shadow: 0 2px 10px var(--sombra);
       }
       .vivencia-item:hover {
-        border-left-color: var(--ocre);
+        border-left-color: var(--ocre-escuro);
         box-shadow: 0 8px 24px var(--sombra-media);
         transform: translateY(-2px);
       }
@@ -499,7 +499,7 @@
       .ideal-item {
         text-align: center;
         padding: 30px 18px;
-        background: #fff;
+        background: var(--creme);
         border: 1px solid rgba(144, 0, 192, 0.20);
         border-radius: 6px;
         transition: all 0.3s ease;
@@ -1252,7 +1252,7 @@
 
         <div class="citacao">
           <p>"Não é apenas um lugar.<br />É um campo de transformação."</p>
-          <span style="font-size: 10px;">Pirâmide de Cristal · Mulungu, Ceará · Brasil</span>
+          <span style="font-size: 10px; color: var(--ocre-escuro);">Pirâmide de Cristal · Mulungu, Ceará · Brasil</span>
         </div>
       </div>
     </section>
