@@ -556,6 +556,29 @@
         letter-spacing: 1px;
       }
 
+      /* ======== AGENDA ======== */
+      .agenda-sec {
+        background: var(--creme-escuro); 
+      }
+      .agenda-container {
+        max-width: 900px;
+        margin: 0 auto;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.30);
+        box-shadow: 0 16px 50px var(--sombra-media);
+        padding: 4px;
+        background: #fff; /* O fundo claro é necessário pra máscara escura funcionar */
+      }
+
+      /* O pulo do gato pra deixar o calendário escuro e cósmico! */
+      .agenda-container iframe {
+        border-radius: 4px;
+        filter: invert(0.9) hue-rotate(220deg) brightness(0.9);
+        width: 100%;
+        display: block;
+      }
+
       /* ======== CARROSSEL ======== */
       .sec-carrossel {
         background: var(--creme-escuro);
@@ -1116,6 +1139,27 @@
       <div class="divisor-simbolo">✦</div>
       <div class="divisor-linha"></div>
     </div>
+
+    <section class="agenda-sec">
+      <div class="container reveal">
+        <span class="secao-tag2">◆ Programe-se ◆</span>
+        <h2 class="secao-titulo2">Nossa <em>Agenda</em> de Vivências</h2>
+        <p class="secao-desc2">
+          Sincronize sua jornada com os próximos retiros e alinhamentos na pirâmide.
+        </p>
+
+        <div class="agenda-container">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=seu_email%40gmail.com&ctz=America%2FFortaleza&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0"
+            style="border: 0"
+            width="100%"
+            height="500"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- ======== CARROSSEL ======== -->
     <section class="sec-carrossel">
